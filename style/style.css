@@ -1,3 +1,14 @@
+:root{
+    --text: rgb(5, 3, 21);
+    --background: rgb(251, 251, 254);
+    --primary: rgb(102, 47, 255);
+    --secondary: rgb(255, 102, 0);
+    --accent: rgb(6, 10, 35);
+}
+
+
+
+
 html{
     font-size: 62.5%;
 }
@@ -8,4 +19,66 @@ html{
 }
 body{
     font-family: Oswald ,Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+li{
+    list-style: none;
+}
+/* navbar */
+
+nav{
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7px;
+    border-bottom: 2px solid lightgray;
+}
+
+
+
+.nav-ul{
+    display: flex;
+    gap: 7px;
+}
+
+.li-nav{
+    position: relative;
+    padding-left: 6px;
+    border-left: 2px solid lightgray;
+}
+
+.items-a{
+    font-size: 1.1rem;
+    transition: color .15s;
+}
+
+.items-a:hover{
+    color: var(--secondary);
+}
+
+.main-logo{
+    width: 8.5rem;
+}
+
+@media screen and (min-width:670px) {
+    .items-a{
+        font-size: 1.6rem;
+        transition: color .15s;
+    }
+    nav{
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        border-bottom: 2px solid lightgray;
+    }
+    .main-logo{
+        width: 9.3rem;
+    }
 }
