@@ -1,9 +1,9 @@
 :root{
     --text: rgb(5, 3, 21);
     --background: rgb(251, 251, 254);
-    --primary: rgb(102, 47, 255);
-    --secondary: rgb(255, 102, 0);
-    --accent: rgb(6, 10, 35);
+    --primary:rgb(255, 102, 0) ;
+    --secondary: rgb(102, 47, 255);
+    --accent: rgb(16, 30, 116);
 }
 
 
@@ -16,9 +16,11 @@ html{
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: Oswald ,Arial, Helvetica, sans-serif;
+    height: 200vh;
 }
 a{
     text-decoration: none;
@@ -37,6 +39,10 @@ nav{
     align-items: center;
     padding: 0 7px;
     border-bottom: 2px solid lightgray;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    background-color: white;
 }
 
 
@@ -80,5 +86,145 @@ nav{
     }
     .main-logo{
         width: 9.3rem;
+    }
+}
+
+/* hero section */
+
+.hero-sec{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../images/hero-background.jpg);
+    height: 50%;
+    background-position: 65% 56%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.hero-heading{
+    font-size: 4rem;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.hero-disc{
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.hero-disc:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 130px;
+    height: 3px;
+    background-color: var(--primary);
+}
+
+strong{
+    color: #4F7363;
+    font-size: 1.5rem;
+}
+
+.btn-contact-hero{
+    background-color: transparent;
+    border: 3px solid var(--primary);
+    height: 45px;
+    width: 100px;
+    padding: 10px;
+    font-size: 1.6rem;
+    transition: background-color .15s;
+    font-weight: bold;
+    color: white;
+    margin-top: 50px;
+    margin-right: 4px;
+    margin-left: 13px;
+}
+
+.btn-contact-hero:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+}
+
+
+.btn-shop-hero{
+    background-color: rgb(102, 47, 255);
+    border: none;
+    height: 45px;
+    width: 140px;
+    padding: 10px;
+    font-size: 1.6rem;
+    transition: background-color .15s;
+    font-weight: bold;
+    color: white;
+    margin-top: 50px;
+}
+
+.btn-shop-hero:hover{
+    cursor: pointer;
+}
+
+@media  screen and (min-width:670px) {
+    .hero-heading{
+        font-size: 5.3rem;
+        color: white;
+        line-height: 1.1;
+        margin-bottom: 30px;
+        max-width: 665px;
+    }
+
+    .hero-disc{
+        color: white;
+        font-size: 1.7rem;
+        position: relative;
+        max-width: 732px;
+    }
+    .btn-contact-hero{
+        background-color: transparent;
+        border: 3px solid var(--primary);
+        width: 120px;
+        padding: 10px;
+        font-size: 1.6rem;
+        transition: background-color .15s;
+        font-weight: bold;
+        color: white;
+        margin-left: 13px;
+    }
+    .btn-shop-hero{
+        background-color: rgb(102, 47, 255);
+        border: none;
+        height: 45px;
+        width: 160px;
+        padding: 10px;
+        font-size: 1.6rem;
+        transition: background-color .15s;
+        font-weight: bold;
+        color: white;
+        margin-top: 50px;
+    }
+    strong{
+        color: #4F7363;
+        font-size: 2rem;
+    }
+    .hero-sec{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(../images/hero-background.jpg);
+        height: 50%;
+        background-position: 55% 56%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
