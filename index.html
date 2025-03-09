@@ -54,9 +54,67 @@
         </p>
 
         <a href="#"><button class="btn-shop-hero">Shop Now!</button></a>
-        <a href="#"><button class="btn-contact-hero">Contact</button></a>
+        <a href="#"><button class="btn-contact-hero">Our Story</button></a>
       </div>
     </div>
-    <!--  -->
+    <!--Products Section-->
+    <section class="main-body">
+      <div class="side-bar">
+        <h3 style="font-size: 1.5rem; letter-spacing: 1px">Filter</h3>
+        <ul id="ul-sidebar">
+          <li>
+            <label class="lbl-sidebar" for="price-input"
+              >Price (between 200 and 1000):</label
+            >
+            <input type="range" name="price-input" min="200" max="250" />
+          </li>
+          <li>
+            <label class="lbl-sidebar" for="model-product">
+              Select Model:
+            </label>
+            <select name="model-product" id="">
+              <option>M4 mac</option>
+              <option>M3 mac</option>
+              <option>M1 mac</option>
+            </select>
+          </li>
+          <li>
+            <label class="lbl-sidebar" for="model-product">
+              Select Size:
+            </label>
+            <select name="model-product" id="">
+              <option value="M4">15 inch</option>
+              <option value="M4">16 inch</option>
+              <option value="M4">20 inch</option>
+            </select>
+          </li>
+          <li>
+            <h3 style="margin-bottom: 3px">Condition:</h3>
+            <input type="radio" id="popular" name="popularity" value="sort" />
+            <label class="lbl-sidebar" for="popular">New</label>
+            <br />
+            <input type="radio" id="bud-fri" name="popularity" />
+            <label class="lbl-sidebar" for="bud-fri" value="sort">Good</label>
+            <br />
+            <input type="radio" id="bud-fri" name="popularity" />
+            <label class="lbl-sidebar" for="bud-fri" value="sort">Bad</label>
+            <br />
+            <input type="radio" id="bud-fri" name="popularity" />
+            <label class="lbl-sidebar" for="bud-fri" value="sort">Poor</label>
+          </li>
+        </ul>
+        <button id="apply-btn">Apply</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+      <div class="product-body">
+        <div id="search-product">
+          <h3>Our Products</h3>
+          <input type="text" />
+        </div>
+        <div class="product-card">
+          <div><img src="" alt="" /></div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

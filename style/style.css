@@ -1,10 +1,10 @@
 :root{
-    --text: rgb(12, 6, 49);
+    --text: rgb(20, 12, 71);
     --background: rgb(246, 245, 255);
     --primary: rgb(255, 89, 0);
     --secondary: rgb(70, 47, 218);
     --accent: rgb(132, 217, 57);
-    
+    --accent-hover:rgb(158, 233, 92);
 }
 
 
@@ -14,7 +14,7 @@ html{
     font-size: 62.5%;
 }
 
-*{
+*, *:after, *:before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -148,7 +148,7 @@ strong{
     background-color: transparent;
     border: 3px solid var(--primary);
     height: 45px;
-    width: 100px;
+    width: 115px;
     padding: 10px;
     font-size: 1.6rem;
     transition: background-color .15s, transform .2s;
@@ -241,4 +241,83 @@ strong{
         padding-left: 20px;
         padding-right: 20px;
     }
+}
+
+/* main body */
+
+.main-body{
+    display: flex;
+    margin-top: 50px;
+    gap: 10px;
+    margin-right: 10px;
+    height: 200vh;
+    position: relative;
+}
+
+
+/* side Bar */
+
+.side-bar{
+    width: 150px;
+    height: fit-content;
+    box-shadow: 0 0 2px black;
+    padding:15px 10px;
+    position: sticky;
+    top: 85px;
+
+}
+
+#ul-sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+}
+
+#apply-btn{
+    font-weight: bold;
+    margin-top: 10px;
+    width: 70px;
+    background-color: var(--accent);
+    border: none;
+    padding: 5px 5px;
+    border-radius: 2px;
+    color: var(--text);
+}
+
+#apply-btn:hover{
+    cursor: pointer;
+    background-color:var(--accent-hover) ;
+}
+
+#reset-btn{
+    color: var(--text);
+    margin-top: 10px;
+    width: 50px;
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    padding: 3px 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+.lbl-sidebar{
+    font-size: 1.2rem;
+}
+@media screen and (min-width:670px) {
+    .side-bar{
+        width: 230px;
+        height: fit-content;
+        box-shadow: 0 0 2px black;
+        padding:15px 17px;
+        position: sticky;
+        top: 85px;
+    
+    }
+}
+/* products section */
+.product-body{
+    width: 100%;
+    box-shadow: 0 0 2px black;
 }
