@@ -1,9 +1,10 @@
 :root{
-    --text: rgb(5, 3, 21);
-    --background: rgb(251, 251, 254);
-    --primary:rgb(255, 102, 0) ;
-    --secondary: rgb(102, 47, 255);
-    --accent: rgb(16, 30, 116);
+    --text: rgb(12, 6, 49);
+    --background: rgb(246, 245, 255);
+    --primary: rgb(255, 89, 0);
+    --secondary: rgb(70, 47, 218);
+    --accent: rgb(132, 217, 57);
+    
 }
 
 
@@ -49,12 +50,12 @@ nav{
 
 .nav-ul{
     display: flex;
-    gap: 7px;
+    gap: 15px;
 }
 
 .li-nav{
     position: relative;
-    padding-left: 6px;
+    padding-left: 7px;
     border-left: 2px solid lightgray;
 }
 
@@ -64,7 +65,7 @@ nav{
 }
 
 .items-a:hover{
-    color: var(--secondary);
+    color: var(--accent);
 }
 
 .main-logo{
@@ -72,6 +73,10 @@ nav{
 }
 
 @media screen and (min-width:670px) {
+    .nav-ul{
+        display: flex;
+        gap: 15px;
+    }
     .items-a{
         font-size: 1.6rem;
         transition: color .15s;
@@ -86,6 +91,11 @@ nav{
     }
     .main-logo{
         width: 9.3rem;
+    }
+    .li-nav{
+        position: relative;
+        padding-left: 16px;
+        border-left: 2px solid lightgray;
     }
 }
 
@@ -130,7 +140,7 @@ nav{
 }
 
 strong{
-    color: #4F7363;
+    color: var(--accent);
     font-size: 1.5rem;
 }
 
@@ -141,7 +151,7 @@ strong{
     width: 100px;
     padding: 10px;
     font-size: 1.6rem;
-    transition: background-color .15s;
+    transition: background-color .15s, transform .2s;
     font-weight: bold;
     color: white;
     margin-top: 50px;
@@ -152,6 +162,8 @@ strong{
 .btn-contact-hero:hover{
     cursor: pointer;
     background-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 0 7px var(--primary);
 }
 
 
@@ -162,7 +174,7 @@ strong{
     width: 140px;
     padding: 10px;
     font-size: 1.6rem;
-    transition: background-color .15s;
+    transition: background-color .15s, transform .2s;
     font-weight: bold;
     color: white;
     margin-top: 50px;
@@ -170,6 +182,8 @@ strong{
 
 .btn-shop-hero:hover{
     cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 0 5px var(--secondary);
 }
 
 @media  screen and (min-width:670px) {
@@ -193,7 +207,7 @@ strong{
         width: 120px;
         padding: 10px;
         font-size: 1.6rem;
-        transition: background-color .15s;
+        transition: background-color .15s, transform .2s;
         font-weight: bold;
         color: white;
         margin-left: 13px;
@@ -205,13 +219,13 @@ strong{
         width: 160px;
         padding: 10px;
         font-size: 1.6rem;
-        transition: background-color .15s;
+        transition: background-color .15s, transform .2s;
         font-weight: bold;
         color: white;
         margin-top: 50px;
     }
     strong{
-        color: #4F7363;
+        color: var(--accent);
         font-size: 2rem;
     }
     .hero-sec{
