@@ -30,11 +30,8 @@
       </div>
       <div class="nav-right">
         <ul class="nav-ul">
-          <li class="li-nav"><a class="items-a" href="#">About us</a></li>
+          <li class="li-nav"><a class="items-a" href="/index.html">Home</a></li>
           <li class="li-nav"><a class="items-a" href="#">Contact</a></li>
-          <li class="li-nav">
-            <a class="items-a" href="#">Products</a>
-          </li>
           <li class="li-nav">
             <a class="items-a" href="#">
               <i class="fa-solid fa-cart-shopping"></i> view cart(0)
@@ -53,11 +50,14 @@
           support. Save money while staying eco-friendly.
         </p>
 
-        <a href="#"><button class="btn-shop-hero">Shop Now!</button></a>
+        <a href="#search-product"
+          ><button class="btn-shop-hero">Shop Now!</button></a
+        >
         <a href="#"><button class="btn-contact-hero">Our Story</button></a>
       </div>
     </div>
     <!--Products Section-->
+    <!-- sidebar -->
     <section class="main-body">
       <div class="side-bar">
         <h3 style="font-size: 1.5rem; letter-spacing: 1px">Filter</h3>
@@ -108,11 +108,177 @@
       </div>
       <div class="product-body">
         <div id="search-product">
-          <h3>Our Products</h3>
-          <input type="text" />
+          <h3 id="heading-products">Our Products</h3>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              gap: 15px;
+              align-items: baseline;
+            "
+          >
+            <input
+              id="search-input"
+              type="text"
+              placeholder="Search For Products..."
+            />
+            <button class="search-btn">Search</button>
+          </div>
         </div>
-        <div class="product-card">
-          <div><img src="" alt="" /></div>
+        <!-- product area -->
+        <div id="product-area">
+          <div class="product-card popular-tag condition-good">
+            <div style="display: flex; justify-content: center">
+              <img
+                class="product-img"
+                src="/images/product images/mac-1.webp"
+                alt="image of a macbook"
+              />
+            </div>
+            <div>
+              <h3 class="product-title">MacBook Air M1</h3>
+              <p class="product-disc">
+                APPLE MacBook Air, M1, 8GB, 256GB, 13 inch, S.Grey
+              </p>
+            </div>
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 44px;
+                gap: 10px;
+                margin-top: 10px;
+              "
+            >
+              <div class="prices-div">
+                <p class="new-price">SAR 1499</p>
+                <p class="old-price">SAR 2599</p>
+              </div>
+              <button class="product-add">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <button class="product-add">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="product-card">
+            <div style="display: flex; justify-content: center">
+              <img
+                class="product-img"
+                src="/images/product images/mac-2.webp"
+                alt="image of a macbook"
+              />
+            </div>
+            <div>
+              <h3 class="product-title">MacBook Air M2</h3>
+              <p class="product-disc">
+                APPLE MacBook Air, M2, 16GB, 256GB SSD, 13.6 inch, 8 Core GPU,
+                Midnight
+              </p>
+            </div>
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 44px;
+                gap: 10px;
+                margin-top: 10px;
+              "
+            >
+              <div class="prices-div">
+                <p class="new-price">SAR 2499</p>
+                <p class="old-price">SAR 3699</p>
+              </div>
+              <button class="product-add">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <button class="product-add">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="product-card">
+            <div style="display: flex; justify-content: center">
+              <img
+                class="product-img"
+                src="/images/product images/mac-3.webp"
+                alt="image of a macbook"
+              />
+            </div>
+            <div>
+              <h3 class="product-title">MacBook Air M2</h3>
+              <p class="product-disc">
+                APPLE MacBook Air, M2, 16GB, 256GB SSD, 13.6 inch, 8 Core GPU,
+                Space Grey
+              </p>
+            </div>
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 44px;
+                gap: 10px;
+                margin-top: 10px;
+              "
+            >
+              <div class="prices-div">
+                <p class="new-price">SAR 3999</p>
+                <p class="old-price">SAR 4499</p>
+              </div>
+              <button class="product-add">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <button class="product-add">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="product-card popular-tag">
+            <div style="display: flex; justify-content: center">
+              <img
+                class="product-img small-img-products"
+                src="/images/product images/mac-4.webp"
+                alt="image of a macbook"
+              />
+            </div>
+            <div>
+              <h3 class="product-title">MacBook Air M3</h3>
+              <p class="product-disc">
+                Apple MacBook Air, Apple M3, 16GB, 512GB SSD, 15.3 inch,
+                Starlight
+              </p>
+            </div>
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 44px;
+                gap: 10px;
+                margin-top: 10px;
+              "
+            >
+              <div class="prices-div">
+                <p class="new-price">SAR 5499</p>
+                <p class="old-price">SAR 6899</p>
+              </div>
+              <button class="product-add">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <button class="product-add">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <!--  -->
         </div>
       </div>
     </section>

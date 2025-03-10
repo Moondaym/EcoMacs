@@ -3,6 +3,7 @@
     --background: rgb(246, 245, 255);
     --primary: rgb(255, 89, 0);
     --secondary: rgb(70, 47, 218);
+    --secondary-hover:rgb(99, 81, 214);
     --accent: rgb(132, 217, 57);
     --accent-hover:rgb(158, 233, 92);
 }
@@ -21,7 +22,6 @@ html{
 }
 body{
     font-family: Oswald ,Arial, Helvetica, sans-serif;
-    height: 200vh;
 }
 a{
     text-decoration: none;
@@ -106,7 +106,7 @@ nav{
     justify-content: center;
     flex-direction: column;
     background-image: url(../images/hero-background.jpg);
-    height: 50%;
+    height: 100vh;
     background-position: 65% 56%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -233,7 +233,7 @@ strong{
         justify-content: center;
         flex-direction: column;
         background-image: url(../images/hero-background.jpg);
-        height: 50%;
+        height: 100vh;
         background-position: 55% 56%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -315,9 +315,189 @@ strong{
         top: 85px;
     
     }
+    .lbl-sidebar{
+        font-size: 1.4rem;
+    }
 }
 /* products section */
 .product-body{
     width: 100%;
     box-shadow: 0 0 2px black;
+    padding: 15px 0;
+}
+
+#search-product{
+    margin-bottom: 25px;
+}
+
+#heading-products{
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+#search-input{
+    margin: 5px 2px;
+    height: 30px;
+    padding: 10px 7px;
+    width: 180px;
+}
+.search-btn{
+    background-color: var(--secondary);
+    color: white;
+    padding: 0 10px;
+    height: 30px;
+    border: none;
+}
+
+.search-btn:hover{
+    cursor: pointer;
+    background-color:var(--secondary-hover);
+    box-shadow: 0 0 5px var(--secondary-hover);
+}
+
+@media screen and (min-width:670px) {
+    #search-input{
+        margin: 5px 2px;
+        height: 30px;
+        padding: 10px 7px;
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* product card */
+
+#product-area{
+    display: grid;
+    grid-template-columns: repeat(1,fit-content);
+    gap: 20px;
+    justify-items: center;
+}
+
+.product-card{
+    width: 200px;
+    height: fit-content;
+    padding: 13px 0;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-img{
+    width: 80%;
+}
+
+.small-img-products{
+    width: 100%;
+}
+
+.product-disc{
+    font-size: 1.1rem;
+    width: 150px;
+}
+.product-title{
+    font-size: 1.4rem;
+}
+
+.product-add{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+}
+
+.product-add:hover{
+    cursor: pointer;
+    background-color: #d6d6d6;
+}
+.old-price{
+    justify-self: flex-start;
+    text-decoration: line-through;
+    font-size: 1rem;
+
+}
+
+.new-price{
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+.prices-div{
+    margin-right: 25px;
+
+}
+
+.condition-good:after{
+    content: url(/images/condition/condition-good.svg);
+    width: 500px;
+    position: absolute;
+    top: 0;
+
+}
+
+.popular-tag:after{
+    content: url(/images/popular.svg);
+    width: 25px;
+    position: absolute;
+    top: -5px;
+    right: 10px;
+}
+
+@media screen and (min-width:860px) {
+    .product-img{
+        width: 100%;
+        max-width: 640px;
+    }
+    .product-card{
+        width: fit-content;
+        height: fit-content;
+        padding: 13px 0;
+        border: 1px solid lightgray;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        margin-left: 10px;
+        position: relative;
+    }
+
+
+    .product-disc{
+        font-size: 1.5rem;
+        width: 150px;
+    }
+    .product-title{
+        font-size: 1.7rem;
+        color: var(--text);
+        letter-spacing: .5px;
+    }
+    .product-add{
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        border: none;
+        aspect-ratio: 1;
+    }
+    .old-price{
+        justify-self: flex-start;
+        text-decoration: line-through;
+        font-size: 1.4rem;
+    
+    }
+    
+    .new-price{
+        font-size: 1.6rem;
+        color: var(--primary);
+
+    }
+    .popular-tag:after{
+        content: url(/images/popular.svg);
+        width: 34px;
+        position: absolute;
+        top: -5px;
+        right: 10px;
+    }
 }
