@@ -480,7 +480,7 @@ strong{
         flex-direction: row;
         gap: 10px;
         align-items: center;
-        margin-left: 10px;
+        margin: 0 10px;
         position: relative;
     }
 
@@ -549,5 +549,51 @@ strong{
         position: absolute;
         top: 10px;
         left: 10px;
+    }
+}
+
+/* footer */
+
+footer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+    background-color: var(--secondary);
+}
+
+.thank-title{
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 35px 0;
+}
+
+.ul-footer-title{
+    color: var(--accent);
+    margin-bottom: 6px;
+}
+
+.ul-footer a{
+    color: white;
+    line-height: 1.9;
+}
+
+@media screen and (min-width:670px) {
+    .ul-footer-title{
+        color: var(--accent);
+        margin-bottom: 6px;
+        font-size: 1.6rem;
+    }
+    .ul-footer a{
+        color: white;
+        line-height: 1.9;
+        font-size: 1.2rem;
+    }
+    .ul-footer a:hover{
+        color: white;
+        line-height: 1.9;
+        font-size: 1.2rem;
+        text-decoration: underline;
     }
 }
