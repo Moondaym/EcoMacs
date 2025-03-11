@@ -75,6 +75,7 @@
             <select name="model-product" id="">
               <option>M4 mac</option>
               <option>M3 mac</option>
+              <option>M2 mac</option>
               <option>M1 mac</option>
             </select>
           </li>
@@ -82,25 +83,26 @@
             <label class="lbl-sidebar" for="model-product">
               Select Size:
             </label>
-            <select name="model-product" id="">
-              <option value="M4">15 inch</option>
-              <option value="M4">16 inch</option>
-              <option value="M4">20 inch</option>
+            <select name="model-product">
+              <option value="M4">15.3 inch</option>
+              <option value="M4">14.2 inch</option>
+              <option value="M4">13.6 inch</option>
+              <option value="M4">13 inch</option>
             </select>
           </li>
           <li>
             <h3 style="margin-bottom: 3px">Condition:</h3>
             <input type="radio" id="popular" name="popularity" value="sort" />
-            <label class="lbl-sidebar" for="popular">New</label>
+            <label class="lbl-sidebar">New</label>
             <br />
-            <input type="radio" id="bud-fri" name="popularity" />
-            <label class="lbl-sidebar" for="bud-fri" value="sort">Good</label>
+            <input type="radio" name="popularity" />
+            <label class="lbl-sidebar" value="sort">Good</label>
             <br />
-            <input type="radio" id="bud-fri" name="popularity" />
-            <label class="lbl-sidebar" for="bud-fri" value="sort">Bad</label>
+            <input type="radio" name="popularity" />
+            <label class="lbl-sidebar" value="sort">Bad</label>
             <br />
-            <input type="radio" id="bud-fri" name="popularity" />
-            <label class="lbl-sidebar" for="bud-fri" value="sort">Poor</label>
+            <input type="radio" name="popularity" />
+            <label class="lbl-sidebar" value="sort">Poor</label>
           </li>
         </ul>
         <button id="apply-btn">Apply</button>
@@ -132,7 +134,7 @@
             <div style="display: flex; justify-content: center">
               <img
                 class="product-img"
-                src="/images/product images/mac-1.webp"
+                src="images/product images/mac-1.webp"
                 alt="image of a macbook"
               />
             </div>
@@ -169,7 +171,7 @@
             <div style="display: flex; justify-content: center">
               <img
                 class="product-img"
-                src="/images/product images/mac-2.webp"
+                src="images/product images/mac-2.webp"
                 alt="image of a macbook"
               />
             </div>
@@ -207,7 +209,7 @@
             <div style="display: flex; justify-content: center">
               <img
                 class="product-img"
-                src="/images/product images/mac-3.webp"
+                src="images/product images/mac-3.webp"
                 alt="image of a macbook"
               />
             </div>
@@ -229,7 +231,7 @@
               "
             >
               <div class="prices-div">
-                <p class="new-price">SAR 3999</p>
+                <p class="new-price">SAR 2999</p>
                 <p class="old-price">SAR 4499</p>
               </div>
               <button class="product-add">
@@ -241,11 +243,11 @@
             </div>
           </div>
           <!--  -->
-          <div class="product-card popular-tag condition-new">
+          <div class="product-card condition-new">
             <div style="display: flex; justify-content: center">
               <img
-                class="product-img small-img-products"
-                src="/images/product images/mac-4.webp"
+                class="product-img"
+                src="images/product images/mac-4.webp"
                 alt="image of a macbook"
               />
             </div>
@@ -279,6 +281,118 @@
             </div>
           </div>
           <!--  -->
+          <div class="product-card popular-tag condition-new">
+            <div style="display: flex; justify-content: center">
+              <img
+                class="product-img"
+                src="images/product images/mac-5.webp"
+                alt="image of a macbook"
+              />
+            </div>
+            <div>
+              <h3 class="product-title">MacBook Air M3</h3>
+              <p class="product-disc">
+                APPLE MacBook Pro, M3, 8GB, 1TB SSD, 14.2 inch, Space Grey
+              </p>
+            </div>
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 44px;
+                gap: 10px;
+                margin-top: 10px;
+              "
+            >
+              <div class="prices-div">
+                <p class="new-price">SAR 5499</p>
+                <p class="old-price">SAR 7499</p>
+              </div>
+              <button class="product-add">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <button class="product-add">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="product-card condition-good">
+            <div style="display: flex; justify-content: center">
+              <img
+                class="product-img"
+                src="images/product images/mac-6.webp"
+                alt="image of a macbook"
+              />
+            </div>
+            <div>
+              <h3 class="product-title">MacBook Air M4</h3>
+              <p class="product-disc">
+                APPLE MacBook Air, M4, 16GB, 512GB SSD, 15 inch, 10 Core GPU,
+                Midnight
+              </p>
+            </div>
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 44px;
+                gap: 10px;
+                margin-top: 10px;
+              "
+            >
+              <div class="prices-div">
+                <p class="new-price">SAR 6449</p>
+                <p class="old-price">SAR 4599</p>
+              </div>
+              <button class="product-add">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <button class="product-add">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="product-card popular-tag condition-new">
+            <div style="display: flex; justify-content: center">
+              <img
+                class="product-img"
+                src="images/product images/mac-7.webp"
+                alt="image of a macbook"
+              />
+            </div>
+            <div>
+              <h3 class="product-title">MacBook Air M4</h3>
+              <p class="product-disc">
+                APPLE MacBook Air, M4, 16GB, 512GB SSD, 13 inch, 10 Core GPU,
+                Sky Blue
+              </p>
+            </div>
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 44px;
+                gap: 10px;
+                margin-top: 10px;
+              "
+            >
+              <div class="prices-div">
+                <p class="new-price">SAR 5499</p>
+                <p class="old-price">SAR 7499</p>
+              </div>
+              <button class="product-add">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <button class="product-add">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>

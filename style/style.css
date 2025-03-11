@@ -250,7 +250,6 @@ strong{
     margin-top: 50px;
     gap: 10px;
     margin-right: 10px;
-    height: 200vh;
     position: relative;
 }
 
@@ -376,12 +375,13 @@ strong{
 
 .product-card{
     width: 200px;
-    height: fit-content;
+    height: 300px;
     padding: 13px 0;
     border: 1px solid lightgray;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: relative;
     overflow: hidden;
 }
@@ -390,9 +390,6 @@ strong{
     width: 80%;
 }
 
-.small-img-products{
-    width: 100%;
-}
 
 .product-disc{
     font-size: 1.1rem;
@@ -401,6 +398,7 @@ strong{
 .product-title{
     font-size: 1.4rem;
 }
+
 
 .product-add{
     width: 30px;
@@ -431,7 +429,7 @@ strong{
 }
 /* condition */
 .condition-good:before{
-    content: url(/images/condition/condition-good.svg);
+    content: url(../images/condition/condition-good.svg);
     width: 40px;
     position: absolute;
     top: 10px;
@@ -439,21 +437,21 @@ strong{
 }
 
 .condition-new:before{
-    content: url(/images/condition/condition-new.svg);
+    content: url(../images/condition/condition-new.svg);
     width: 40px;
     position: absolute;
     top: 10px;
     left: 10px;
 }
 .condition-poor:before{
-    content: url(/images/condition/condition-poor.svg);
+    content: url(../images/condition/condition-poor.svg);
     width: 40px;
     position: absolute;
     top: 10px;
     left: 10px;
 }
 .condition-bad:before{
-    content: url(/images/condition/condition-bad.svg);
+    content: url(../images/condition/condition-bad.svg);
     width: 40px;
     position: absolute;
     top: 10px;
@@ -461,7 +459,7 @@ strong{
 }
 /*  */
 .popular-tag:after{
-    content: url(/images/popular.svg);
+    content: url(../images/popular.svg);
     width: 25px;
     position: absolute;
     top: -5px;
@@ -475,7 +473,7 @@ strong{
     }
     .product-card{
         width: fit-content;
-        height: fit-content;
+        max-height: 300px;
         padding: 13px 0;
         border: 1px solid lightgray;
         display: flex;
@@ -516,7 +514,7 @@ strong{
 
     }
     .popular-tag:after{
-        content: url(/images/popular.svg);
+        content: url(../images/popular.svg);
         width: 34px;
         position: absolute;
         top: -5px;
@@ -524,7 +522,7 @@ strong{
     }
     /* conditions */
     .condition-good:before{
-        content: url(/images/condition/condition-good.svg);
+        content: url(../images/condition/condition-good.svg);
         width: 50px;
         position: absolute;
         top: 10px;
@@ -532,21 +530,21 @@ strong{
     }
     
     .condition-new:before{
-        content: url(/images/condition/condition-new.svg);
+        content: url(../images/condition/condition-new.svg);
         width: 50px;
         position: absolute;
         top: 10px;
         left: 10px;
     }
     .condition-poor:before{
-        content: url(/images/condition/condition-poor.svg);
+        content: url(../images/condition/condition-poor.svg);
         width: 50px;
         position: absolute;
         top: 10px;
         left: 10px;
     }
     .condition-bad:before{
-        content: url(/images/condition/condition-bad.svg);
+        content: url(../images/condition/condition-bad.svg);
         width: 50px;
         position: absolute;
         top: 10px;
