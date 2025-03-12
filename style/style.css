@@ -619,19 +619,24 @@ footer{
     border-radius: 3px;
     box-shadow: 0 0 10px black;
     background-color: white;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    color: var(--text);
 }
 
 .close-btn{
     font-size: 5.4rem;
-    color: red;
+    color:var(--accent) ;
+    position: absolute;
+    top: -25px;
+    right: 6px;
 }
 
 .close-btn:hover{
     cursor: pointer;
+    color: var(--accent-hover);
 }
 
 .popup-div{
@@ -653,5 +658,25 @@ footer{
     to{
         top: 0;
         opacity: 1;
+    }
+}
+
+@media screen and (min-width:860px) {
+    .popup{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 150px;
+        padding: 10px 20px;
+        border-radius: 3px;
+        box-shadow: 0 0 10px black;
+        background-color: white;
+        font-size: 1.9rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: var(--text);
     }
 }
