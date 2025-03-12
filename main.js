@@ -31,8 +31,6 @@ document.querySelector("#product-area").addEventListener('click', function(e){
         maxCartNum()
 
     }
-
-
 })
 
 document.querySelector('.cart-nav').addEventListener('click', function(){
