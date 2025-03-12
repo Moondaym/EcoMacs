@@ -33,7 +33,7 @@
           <li class="li-nav"><a class="items-a" href="/index.html">Home</a></li>
           <li class="li-nav"><a class="items-a" href="#">Contact</a></li>
           <li class="li-nav">
-            <a class="items-a cart-nav" href="#">
+            <a style="cursor: pointer" class="items-a cart-nav">
               <i class="fa-solid fa-cart-shopping"></i> view cart(0)
             </a>
           </li>
@@ -160,7 +160,7 @@
                 <p class="new-price">SAR 1499</p>
                 <p class="old-price">SAR 2599</p>
               </div>
-              <button class="product-add">
+              <button class="product-add btn-heart">
                 <i class="fa-solid fa-heart"></i>
               </button>
               <button class="product-add-cart">+</button>
@@ -196,8 +196,8 @@
                 <p class="new-price">SAR 2499</p>
                 <p class="old-price">SAR 3699</p>
               </div>
-              <button class="product-add">
-                <i class="icon-heart fa-solid fa-heart"></i>
+              <button class="product-add btn-heart">
+                <i class="fa-solid fa-heart"></i>
               </button>
               <button class="product-add-cart">+</button>
             </div>
@@ -232,7 +232,7 @@
                 <p class="new-price">SAR 2999</p>
                 <p class="old-price">SAR 4499</p>
               </div>
-              <button class="product-add">
+              <button class="product-add btn-heart">
                 <i class="fa-solid fa-heart"></i>
               </button>
               <button class="product-add-cart">+</button>
@@ -268,7 +268,7 @@
                 <p class="new-price">SAR 5499</p>
                 <p class="old-price">SAR 6899</p>
               </div>
-              <button class="product-add">
+              <button class="product-add btn-heart">
                 <i class="fa-solid fa-heart"></i>
               </button>
               <button class="product-add-cart">+</button>
@@ -303,7 +303,7 @@
                 <p class="new-price">SAR 5499</p>
                 <p class="old-price">SAR 7499</p>
               </div>
-              <button class="product-add">
+              <button class="product-add btn-heart">
                 <i class="fa-solid fa-heart"></i>
               </button>
               <button class="product-add-cart">+</button>
@@ -339,7 +339,7 @@
                 <p class="new-price">SAR 6449</p>
                 <p class="old-price">SAR 4599</p>
               </div>
-              <button class="product-add">
+              <button class="product-add btn-heart">
                 <i class="fa-solid fa-heart"></i>
               </button>
               <button class="product-add-cart">+</button>
@@ -375,7 +375,7 @@
                 <p class="new-price">SAR 5499</p>
                 <p class="old-price">SAR 7499</p>
               </div>
-              <button class="product-add">
+              <button class="product-add btn-heart">
                 <i class="fa-solid fa-heart"></i>
               </button>
               <button class="product-add-cart">+</button>
@@ -412,6 +412,19 @@
       <div class="popup">
         <p>Item has been added to your cart!</p>
         <div class="close-btn">&times;</div>
+      </div>
+    </div>
+    <!-- cart modal -->
+
+    <div class="car-modal-container">
+      <div class="cart-modal">
+        <ul id="cart-list">
+          <h3 id="cart-title">cart is empty</h3>
+        </ul>
+        <div class="close-cart-btn">&times;</div>
+        <div>
+          <button id="purchase-btn">Purchase</button>
+        </div>
       </div>
     </div>
 
