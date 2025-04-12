@@ -113,12 +113,6 @@ footer{
     background-color: var(--secondary);
 }
 
-.thank-title{
-    text-align: center;
-    font-size: 1.8rem;
-    margin: 35px 0;
-}
-
 .ul-footer-title{
     color: var(--accent);
     margin-bottom: 6px;
